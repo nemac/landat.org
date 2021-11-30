@@ -1,0 +1,33 @@
+.section-partners {
+
+    table {
+	@include mobile-display("phone-landscape") {
+	    width: 100%;
+        }
+        @include mobile-display("phone-portrait") {
+	    width: 100%;
+	}
+    }
+}
+
+table#partners {
+
+    h3 {
+        margin-bottom: 1em;
+    }
+
+    li {
+        margin: 0 auto;
+        list-style: none;
+        font-size: .85em;
+    }
+
+    li:before {
+        content: "›";
+        margin-right: .5em;
+    }
+
+    ul {
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,226 @@
+// contains modifications for the main content of all node types
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: $accent-color;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: .75em;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+ul {
+    overflow: hidden;
+}
+
+.l-content p a {
+    border-bottom: dotted thin $link-color;
+}
+
+.field--label-inline {
+    .field__label, .field__items, .field__item {
+	float: none;
+	display: inline;
+    }
+}
+
+.node-type-case-study, .node-type-region {
+    .group-left {
+	width: 75%;
+	padding-right: 6em;
+    }
+
+    .group-right {
+	width: 24.9%;
+
+	.views-row {
+	    margin-bottom: 1.25em;
+	}
+
+	.views-field-title {
+	    margin-bottom: .5em;
+	}
+
+    }
+
+    .group-right, .group-footer {
+	margin-top: 2.5em;
+
+	a:before {
+	    content: "\203A\00A0";
+	    color: $link-color;
+	}
+
+	ul.pager a:before {
+		content: none;
+	}
+    }
+
+    .group-footer {
+	.field-group-div {
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 47%;
+	    padding: 0 2.9% 0 0;
+	}
+
+	.date-display-range {
+	    display: inline-block;
+	}
+    }
+}
+
+.node {
+    .field__label {
+	font-size: 18px;
+	margin-bottom: .75em;
+	color: $accent-color;
+    }
+}
+
+// todo: clean up the margin of the right group to be generalized
+.node-type-case-study {
+    .field--name-field-asset, 
+    .field--name-field-threat, 
+    .field--name-field-option {
+	margin-bottom: 1.5em;
+    }
+
+    .field-group-div .field__item {
+	margin-bottom: .75em;
+    }
+
+    .field-group-div .ds-1col .field__item {
+	margin-bottom: 0;
+    }
+}
+
+.field--name-narrative {
+    .field-content {
+	line-height: 1.4em;
+    }
+
+    .views-label {
+	font-size: 20px;
+	margin-bottom: .75em;
+	margin-top: 1.5em;
+    }
+}
+
+.field--name-field-lead, .field--name-field-workflow-guide {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.field--name-field-lead {
+    width: 66%;
+    padding-right: 1em;
+    font-size: 1.2em;
+}
+
+.field--name-field-state,
+.field--name-field-scale,
+.field--name-field-project-start-end,
+.field--name-field-funder-name,
+.field--name-field-main-funder,
+.field--name-field-additional-funders {
+    .field__item:before {
+	content:"\203A\00A0";
+    }
+}
+
+.views-field-field-additional-funders {
+    margin-top: 1em;
+}
+
+.field--name-field-header-image-attribution {
+    margin-top: 1.5em;
+    border-top: thin solid #ccc;
+    padding-top: 1em;
+
+    &, & .field__label {
+	font-size: 14px;
+    }
+
+    .field__label {
+	margin-bottom: 0;
+    }
+}
+
+.views-field-field-header-image {
+    text-align: center;
+	
+    a:before {
+	content: none !important;
+    }
+}
+
+
+.page-actions, .page-workflow-guide {
+    .views-field-field-image {
+        position: relative;
+        float: right;
+        padding: 0 0 1em 1em;
+        clear: right;
+
+        ul li {
+            list-style: none;
+        }
+    }
+}
+
+.view-case-studies,
+.view-publications {
+    .views-row {
+        margin-bottom: 1em;
+        clear: both;
+    }
+
+    .field--name-field-link {
+        margin-bottom: 1em;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .field--name-field-image {
+        float: left;
+        margin: 0 1em 1em 0;
+    }
+}
+
+.page-node-9 table {
+    tr, th, td {
+        vertical-align: middle;
+    }
+}
+
+.view-workshop-resources {
+    .views-field-field-date, .views-field-field-location {
+        .views-label, .field-content {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+
+    h3 {
+        clear: both;
+    }
+}
+
+.node-type-workshop .field--name-field-image,
+.view-workshop-resources .views-field-field-image{
+    float: left;
+    margin: 0 1em 1em 0;
+    clear: right;
+}
+
+.node-type-workshop .field--name-field-image {
+    margin-top: 1em;
+    margin-right: 2em;
+}

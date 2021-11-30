@@ -1,0 +1,63 @@
+#header, #footer-wrapper, #skip-link, 
+ul.contextual-links, ul.links, ul.primary, 
+.item-list .pager, div.field-type-taxonomy-term-reference, 
+div.messages, div.meta, p.comment-time, table, .breadcrumb {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+body {
+    color: $text-color;
+    background-color: #fff;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+p, li {
+    margin: .75em auto;
+    line-height: 1.4em;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: disc;
+    margin: .5em auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin: 1em auto;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}

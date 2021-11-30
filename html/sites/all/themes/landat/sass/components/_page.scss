@@ -1,0 +1,44 @@
+.l-page {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.l-main {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px 20px;
+
+    @include mobile-display("desktop-small") {
+	width: 960px;
+    }
+}
+
+.push {
+    height: 50px;
+}
+
+.l-footer {
+    margin-top: -50px;
+    height: 50px;
+}
+
+#block-menu-menu-footer-menu {
+    border-top: solid thin #ccc;
+
+    ul {
+	text-align: center;
+	margin-left: 0;
+	margin-top: 11px;
+    }
+
+    ul li {
+	display: inline-block;
+	list-style-image: none;
+	padding-right: 1em;
+	font-size: .8em;
+    }
+}

@@ -1,0 +1,105 @@
+// Configures the site header & header menus
+.header-wrapper {
+    background: none;
+}
+
+#main-menu {
+    clear: both;
+}
+
+#block-system-main-menu {
+    width: 65%;
+    font-size: 0.929em;
+    margin: 0;
+    padding: 0 15px;
+    display: inline-block;
+
+    ul {
+        margin: 0;
+        padding:0;
+    }
+}
+
+ul.links {
+    color: #68696b;
+    font-size: 0.821em;
+}
+
+#block-system-main-menu li {
+    float: left;
+    list-style: none;
+    padding: 0 1px;
+    margin: 0 1px;
+}
+
+.site-logo img {
+    width: 150px;
+    height: auto;
+}
+
+#page, #main-wrapper, #block-system-main-menu li a.active, #block-system-main-menu li.active-trail a {
+    background: #ffffff;
+}
+
+#block-system-main-menu li a.active {
+    border-bottom: none;
+}
+
+#block-system-main-menu a {
+    color: #333;
+    background: #ccc;
+    background: rgba(255, 255, 255, 0.7);
+    float: left;
+    height: 2.4em;
+    line-height: 2.4em;
+    padding: 0 0.8em;
+    text-decoration: none;
+    text-shadow: 0 1px #eee;
+    -khtml-border-radius-topleft: 8px;
+    -khtml-border-radius-topright: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#block-block-2 {
+    display: inline-block;
+    text-align: right;
+}
+
+.l-branding {
+    width: 20%
+}
+
+.l-header {
+    color: white;
+    min-height: 100px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 1em auto;
+
+    a {
+	text-decoration: none;
+	color: $accent-color;
+    }
+}
+
+.l-region--header {
+    width: 75%;
+}
+
+.l-branding, .l-region--header,
+#block-superfish-1, #block-search-form {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+h1.site-name {
+    font-size: 24px;
+    font-weight: normal;
+}
